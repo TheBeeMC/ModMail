@@ -343,7 +343,7 @@ class Modmail(commands.Bot):
     async def process_modmail(self, message):
         '''Processes messages sent to the bot.'''
         try:
-            await message.send('**Discord Mod) TrickyShot**🐄: You would have to go through my other discord TrickyShot#2713 and message me what you need help for.).format(message))
+            await client.send_message('**Discord Mod) TrickyShot**🐄: You would have to go through my other discord TrickyShot#2713 and message me what you need help for.).format(message))
         except:
             pass
 
