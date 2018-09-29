@@ -234,7 +234,7 @@ class Modmail(commands.Bot):
     async def ping(self, ctx):
         """Pong! Returns your websocket latency."""
         em = discord.Embed()
-        em.title ='Pong! Websocket Latency:'
+        em.title ='Pong! Discord Latency:'
         em.description = f'{self.ws.latency * 1000:.4f} ms'
         em.color = 0x00FF00
         await ctx.send(embed=em)
@@ -343,7 +343,7 @@ class Modmail(commands.Bot):
     async def process_modmail(self, message):
         '''Processes messages sent to the bot.'''
         try:
-            await message.add_reaction('✅')
+            await message.send('**Discord Mod) TrickyShot**🐄: You would have to go through my other discord TrickyShot#2713 and message me what you need help for.).format(message))
         except:
             pass
 
