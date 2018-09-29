@@ -9,7 +9,7 @@
     },
     "GUILD_ID": {
       "description": "The id for the server you are hosting this bot for.",
-      "required": false
+      "required": true
     },
     "PREFIX": {
       "description": "Command prefix to use.",
