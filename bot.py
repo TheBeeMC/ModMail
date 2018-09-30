@@ -1,18 +1,14 @@
 '''
 MIT License
-
 Copyright (c) 2017 Kyb3r
-
-Permission is hereby granted, free of charge, to any person obtaining a cop
+Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 copies of the Software, and to permit persons to whom the Software is
 furnished to do so, subject to the following conditions:
-
 The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software.
-
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
@@ -234,7 +230,7 @@ class Modmail(commands.Bot):
     async def ping(self, ctx):
         """Pong! Returns your websocket latency."""
         em = discord.Embed()
-        em.title ='Pong! Discord Latency:'
+        em.title ='Pong! Websocket Latency:'
         em.description = f'{self.ws.latency * 1000:.4f} ms'
         em.color = 0x00FF00
         await ctx.send(embed=em)
@@ -343,7 +339,7 @@ class Modmail(commands.Bot):
     async def process_modmail(self, message):
         '''Processes messages sent to the bot.'''
         try:
-            await client.send_message('**Discord Mod) TrickyShot**🐄: You would have to go through my other discord TrickyShot#2713 and message me what you need help for.).format(message))
+            await message.add_reaction('✅')
         except:
             pass
 
