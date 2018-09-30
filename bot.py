@@ -22,7 +22,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 '''
 
-GUILD_ID = 495631392068337666 # your guild id here
+GUILD_ID = 481137984448626688 # your guild id here
 
 import discord
 from discord.ext import commands
