@@ -53,7 +53,5 @@ async def on_ready():
     print('------')
     print('Logged in as: ' + bot.user.name + ', ' + bot.user.id)
     print('------')
-    print('Running discord.py v' + discord.__version__)
-    bot.loop.create_task(status_task())
 
 client.run(os.getenv('TOKEN'))
